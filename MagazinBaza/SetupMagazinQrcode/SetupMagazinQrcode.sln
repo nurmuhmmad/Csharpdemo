@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "SetupMagazinQrcode", "SetupMagazinQrcode\SetupMagazinQrcode.isproj", "{12D22337-E4C8-46BA-AEAA-EE810DDFB28E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Default = CD_ROM|Default
+		DVD-5|Default = DVD-5|Default
+		SingleImage|Default = SingleImage|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12D22337-E4C8-46BA-AEAA-EE810DDFB28E}.CD_ROM|Default.ActiveCfg = CD_ROM
+		{12D22337-E4C8-46BA-AEAA-EE810DDFB28E}.CD_ROM|Default.Build.0 = CD_ROM
+		{12D22337-E4C8-46BA-AEAA-EE810DDFB28E}.DVD-5|Default.ActiveCfg = DVD-5
+		{12D22337-E4C8-46BA-AEAA-EE810DDFB28E}.DVD-5|Default.Build.0 = DVD-5
+		{12D22337-E4C8-46BA-AEAA-EE810DDFB28E}.SingleImage|Default.ActiveCfg = SingleImage
+		{12D22337-E4C8-46BA-AEAA-EE810DDFB28E}.SingleImage|Default.Build.0 = SingleImage
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

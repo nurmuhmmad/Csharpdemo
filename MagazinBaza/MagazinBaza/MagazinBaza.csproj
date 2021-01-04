@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40C4264C-959B-4357-83A2-67659DE8BC8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MagazinBaza</RootNamespace>
+    <AssemblyName>MagazinBaza</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel1">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 11.0\Visual Studio Tools for Office\PIA\Office14\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="asosiy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="asosiy.Designer.cs">
+      <DependentUpon>asosiy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bazachaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bazachaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bazachaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bazachaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bazachaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bazachaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bazadanix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bazadanix.Designer.cs">
+      <DependentUpon>bazadanix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dostavka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dostavka.Designer.cs">
+      <DependentUpon>Dostavka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="my_space.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="my_space.Designer.cs">
+      <DependentUpon>my_space.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Office.cs" />
+    <Compile Include="password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="password.Designer.cs">
+      <DependentUpon>password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Precent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Precent.Designer.cs">
+      <DependentUpon>Precent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rezerv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rezerv.Designer.cs">
+      <DependentUpon>rezerv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trade_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trade_info.Designer.cs">
+      <DependentUpon>trade_info.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="asosiy.resx">
+      <DependentUpon>asosiy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bazadanix.resx">
+      <DependentUpon>bazadanix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dostavka.resx">
+      <DependentUpon>Dostavka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="my_space.resx">
+      <DependentUpon>my_space.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="password.resx">
+      <DependentUpon>password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Precent.resx">
+      <DependentUpon>Precent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="rezerv.resx">
+      <DependentUpon>rezerv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trade_info.resx">
+      <DependentUpon>trade_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bazachaDataSet.xsc">
+      <DependentUpon>bazachaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bazachaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bazachaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bazachaDataSet.xss">
+      <DependentUpon>bazachaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bazachaDataSet1.xsc">
+      <DependentUpon>bazachaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bazachaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bazachaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bazachaDataSet1.xss">
+      <DependentUpon>bazachaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bazachaDataSet2.xsc">
+      <DependentUpon>bazachaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="bazachaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bazachaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bazachaDataSet2.xss">
+      <DependentUpon>bazachaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bazacha.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\Admin.png" />
+    <Content Include="img\Cancel.png" />
+    <Content Include="img\Chart.png" />
+    <Content Include="img\Data-Add.png" />
+    <Content Include="img\Data-Certificate.png" />
+    <Content Include="img\Data-Connect.png" />
+    <Content Include="img\Data-Delete.png" />
+    <Content Include="img\Data-Edit.png" />
+    <Content Include="img\Data-Information.png" />
+    <Content Include="img\Data-Settings.png" />
+    <Content Include="img\Data-Table.png" />
+    <Content Include="img\Discount.png" />
+    <Content Include="img\Excel.png" />
+    <Content Include="img\exit.png" />
+    <Content Include="img\Exit_base.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\minimize.png" />
+    <Content Include="img\PDF.png" />
+    <Content Include="img\Power.png" />
+    <Content Include="img\Receipt.png" />
+    <Content Include="img\Reserve.png" />
+    <Content Include="img\Service.png" />
+    <Content Include="img\Transport.png" />
+    <Content Include="img\View.png" />
+    <Content Include="img\Web.png" />
+    <Content Include="img\Word.png" />
+    <None Include="Resources\user-menu-male--v1.png" />
+    <None Include="Resources\Reserve.png" />
+    <None Include="Resources\access-icon[1].png" />
+    <None Include="Resources\bi[1].png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\photo-1564941547258-273e19e5d4bf[1].jpg" />
+    <None Include="Resources\photo-1553546895-531931aa1aa8[1].jpg" />
+    <None Include="Resources\photo-1525328437458-0c4d4db7cab4[1].jpg" />
+    <None Include="Resources\photo-1568004614679-c938da0922fb[1].jpg" />
+    <None Include="Resources\1zfm.gif" />
+    <None Include="Resources\key-animated-gif-3[1].gif" />
+    <Content Include="Resources\programming-wallpaper-4-780043.png" />
+    <None Include="Resources\loop-512_47957.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
